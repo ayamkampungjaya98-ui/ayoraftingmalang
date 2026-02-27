@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Ayo Rafting Malang - Tips & Panduan</title>
+    <meta name="description"
+        content="Blog Ayo Rafting Malang - Dapatkan tips seru, panduan lokasi, dan inspirasi petualangan arung jeram terbaik di Batu Malang.">
+    <meta name="keywords"
+        content="blog rafting malang, tips rafting pemula, panduan arung jeram, lokasi rafting batu, artikel wisata malang">
+    <meta name="author" content="Ayo Rafting Malang">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Open Graph / AI Overview -->
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Blog Ayo Rafting Malang - Tips & Panduan">
+    <meta property="og:description"
+        content="Blog Ayo Rafting Malang - Dapatkan tips seru, panduan lokasi, dan inspirasi petualangan arung jeram terbaik di Batu Malang.">
+    <meta property="og:image" content="https://ayoraftingmalang.netlify.app/img%20rafting/Slide96.webp">
+    <meta property="og:url" content="https://ayoraftingmalang.netlify.app/blog.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1000/1000213.png">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Boostrap & Fonts with Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </noscript>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <style>
+        :root {
+            --primary-orange: #ff6b00;
+            --primary-orange-hover: #e66000;
+            --text-dark: #212529;
+            --text-gray: #6c757d;
+            --bg-light: #f9fbfb;
+            --border-color: #eaeaea;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: var(--text-dark);
+            padding-top: 80px;
+            /* Offset for navbar */
+        }
+
+        /* Generic Utilities */
+        .text-orange {
+            color: var(--primary-orange) !important;
+        }
+
+        .bg-orange {
+            background-color: var(--primary-orange) !important;
+            color: white;
+        }
+
+        .btn-orange {
+            background-color: var(--primary-orange);
+            color: white;
+            border: none;
+            transition: all 0.3s;
+        }
+
+        .btn-orange:hover {
+            background-color: var(--primary-orange-hover);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--text-dark) !important;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand i {
+            color: #0d6efd;
+            margin-right: 8px;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-gray);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 8px 16px !important;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #0d6efd;
+        }
+
+        /* Blog Header */
+        .blog-header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .blog-header h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .blog-header p {
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Search Bar */
+        .search-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 50px;
+            border: 1px solid var(--border-color);
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            transition: box-shadow 0.3s;
+        }
+
+        .search-box:focus-within {
+            box-shadow: 0 6px 15px rgba(255, 107, 0, 0.15);
+            border-color: rgba(255, 107, 0, 0.3);
+        }
+
+        .search-box i {
+            color: var(--text-gray);
+            margin: 0 15px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        .search-box .btn {
+            border-radius: 50px;
+            padding: 8px 24px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Blog Cards Grid */
+        .blog-section {
+            padding: 20px 0 60px;
+        }
+
+        .blog-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .blog-card-img-wrap {
+            position: relative;
+            padding-top: 60%;
+            /* Aspect Ratio */
+            overflow: hidden;
+        }
+
+        .blog-card-img-wrap img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .blog-card:hover .blog-card-img-wrap img {
+            transform: scale(1.05);
+        }
+
+        .blog-card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .blog-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .blog-desc {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .blog-link {
+            color: var(--primary-orange);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .blog-link i {
+            margin-left: 5px;
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover .blog-link i {
+            transform: translateX(4px);
+        }
+
+        /* Pagination */
+        .pagination {
+            margin-top: 40px;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .page-item .page-link {
+            border: none;
+            color: var(--text-dark);
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+            background-color: var(--bg-light);
+            transition: all 0.2s;
+        }
+
+        .page-item .page-link:hover {
+            background-color: #e9ecef;
+        }
+
+        .page-item.active .page-link {
+            background-color: var(--primary-orange);
+            color: white;
+            box-shadow: 0 4px 8px rgba(255, 107, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-light);
+            padding: 60px 0 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo i {
+            color: var(--primary-orange);
+            margin-right: 8px;
+        }
+
+        .footer-desc {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: #eef0f2;
+            color: var(--text-gray);
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary-orange);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-heading {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a,
+        .footer-address {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin: 0;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-bottom-links a {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            text-decoration: none;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 999;
+        }
+
+        .btn-float {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .btn-backtop {
+            background-color: var(--primary-orange);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+    </style>
+    <!-- Schema Markup untuk AI Overview -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Ayo Rafting Malang",
+      "url": "https://ayoraftingmalang.netlify.app/blog.html",
+      "description": "Tips, panduan, dan review seputar wisata arung jeram di Batu Malang.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ayo Rafting Malang"
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-water"></i> Ayo Rafting
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#paket">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="https://wa.me/6282211221909"
+                            class="btn btn-primary rounded-pill px-4 py-2 fw-semibold text-white">HUBUNGI KAMI</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>Blog Ayo Rafting Malang</h1>
+            <p>Dapatkan tips seru, panduan lokasi, dan inspirasi petualangan menantang arung jeram untuk family
+                gathering maupun acara perusahaan di Jawa Timur.</p>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Cari artikel, tips, promo...">
+                    <button class="btn btn-orange" id="searchBtn">Cari</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-card-img-wrap">
+                            <img loading="lazy" src="img rafting/Slide98.webp" alt="Paket Family Rafting">
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-title">Review Fasilitas dan Harga Paket Outbound Rafting Kasembon Murah
+                                Tahun Ini: Panduan Komprehensif 2026
+                            </h3>
+                            <p class="blog-desc">Nikmati adrenalin di tengah alam Kota Batu yang asri dengan paket
+                                rafting terbaik. Temukan keseruan berkumpul bersama sahabat dan keluarga dengan rute
+                                aman.</p>
+                            <div>
+                                <a href="review-fasilitas-harga-paket-outbound-rafting-kasembon-murah.html"
+                                    class="blog-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-card-img-wrap">
+                            <img loading="lazy" src="img rafting/Slide99.webp" alt="Tips Persiapan Rafting">
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-title">Bandingkan Harga Rafting Sahabat Air Batu: Mana Paket yang Paling
+                                Hemat?</h3>
+                            <p class="blog-desc">Tips bagi kamu yang baru pertama kali mencoba rute sungai deras.
+                                Pastikan rute pengarungan tetap menyenangkan tanpa perlu takut persiapan kurang matang.
+                            </p>
+                            <div>
+                                <a href="bandingkan-harga-rafting-sahabat-air-batu.html" class="blog-link">Baca
+                                    Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-card-img-wrap">
+                            <img loading="lazy" src="img rafting/Slide100.webp" alt="5 Alasan Rafting">
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-title">Rincian Lengkap Harga Rafting Sahabat Air Batu Terbaru 2026:
+                                Fasilitas dan Tips Pemesanan</h3>
+                            <p class="blog-desc">Mau liburan seru tapi belum pernah sama sekali? Simak ulasan jalur
+                                favorit dengan tantangan adrenalin yang cocok dilalui bersama komunitas hobi.</p>
+                            <div>
+                                <a href="harga-rafting-sahabat-air-batu.html" class="blog-link">Baca Selengkapnya <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-card-img-wrap">
+                            <img loading="lazy" src="img rafting/Slide101.webp" alt="Perlengkapan Rafting">
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-title">Rincian Harga Rafting Sahabat Air Batu untuk Rombongan Kantor dan
+                                Keluarga</h3>
+                            <p class="blog-desc">Bawa selalu sandal gunung, pakaian basah, dan perlengkapan mandi.
+                                Pahami fungsi pelampung dan helm agar petualangan air tidak merepotkan di tengah
+                                perjalanan.</p>
+                            <div>
+                                <a href="rincian-harga-rafting-sahabat-air-batu-rombongan.html" class="blog-link">Baca
+                                    Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-card-img-wrap">
+                            <img loading="lazy" src="img rafting/Slide106.webp" alt="Anggaran Rafting">
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-title">Update Daftar Harga Rafting Sahabat Air Batu Terbaru dan Pilihan
+                                Paketnya 2026</h3>
+                            <p class="blog-desc">Berapa total anggaran yang dibutuhkan untuk satu rombongan kecil di
+                                jalur tempuh 12km? Cek ulasan dan daftar fasilitas lengkap beserta harga terbarunya.</p>
+                            <div>
+                                <a href="update-daftar-harga-rafting-sahabat-air-batu.html" class="blog-link">Baca
+                                    Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card">
+                        <div class="blog-card-img-wrap">
+                            <img loading="lazy" src="img rafting/Slide107.webp" alt="Kegiatan LDKS">
+                        </div>
+                        <div class="blog-card-body">
+                            <h3 class="blog-title">Kegiatan Outbound Corporate & LDKS Sekolah: Solusi Tepat Asah
+                                Kekompakan</h3>
+                            <p class="blog-desc">Aktivitas pembentukan karakter, kepemimpinan, dan kerja sama tim secara
+                                outdoor yang seru untuk instansi, perusahaan, manajer, maupun organisasi mahasiswa.</p>
+                            <div>
+                                <a href="#" class="blog-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Blog pagination mt-5">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <i class="fas fa-chevron-left fa-sm"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <i class="fas fa-chevron-right fa-sm"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-12 pe-lg-5">
+                    <div class="footer-logo">
+                        <i class="fas fa-water"></i> AYO RAFTING
+                    </div>
+                    <p class="footer-desc">The premier destination for adventure enthusiasts and thrill seekers in East
+                        Java. Join us for the ride of a lifetime tracking the river currents.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Equipment Rental</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Private Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">SUPPORT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Insurance Details</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">FIND US</h4>
+                    <p class="footer-address">
+                        Jl. Raya Rafting No. 123, Kota Batu,<br>
+                        Malang, Jawa Timur, 65314
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ayo Rafting Malang. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="#" class="btn-float btn-backtop" title="Kembali ke atas">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <a href="https://wa.me/6282211221909" target="_blank" class="btn-float btn-whatsapp"
+            title="Hubungi Kami via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        // Smooth scroll for back to top button
+        document.querySelector('.btn-backtop').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const blogCards = document.querySelectorAll('.blog-section .col-lg-4');
+
+        function performSearch() {
+            const filter = searchInput.value.toLowerCase();
+
+            blogCards.forEach(card => {
+                const title = card.querySelector('.blog-title').innerText.toLowerCase();
+                const desc = card.querySelector('.blog-desc').innerText.toLowerCase();
+
+                if (title.includes(filter) || desc.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', performSearch);
+        searchBtn.addEventListener('click', performSearch);
+    </script>
+</body>
+
+</html>

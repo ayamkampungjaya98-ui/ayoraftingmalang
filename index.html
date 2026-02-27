@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Rafting Malang - Petualangan Seru di Alam Terbuka!</title>
+    <meta name="description"
+        content="Ayo Rafting Malang - Petualangan Seru di Alam Terbuka. Rasakan sensasi arung jeram yang memacu adrenalin di sungai terbaik Malang. Aman, seru, dan tak terlupakan!">
+    <meta name="keywords"
+        content="rafting malang, ayo rafting malang, wisata arung jeram malang, paket rafting batu, liburan keluarga malang, outbound malang">
+    <meta name="author" content="Ayo Rafting Malang">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Open Graph / AI Overview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ayo Rafting Malang - Petualangan Seru di Alam Terbuka!">
+    <meta property="og:description"
+        content="Rasakan sensasi petualangan arung jeram yang memacu adrenalin di sungai terbaik Malang. Paket wisata rafting keluarga dan corporate.">
+    <meta property="og:image" content="https://ayoraftingmalang.netlify.app/img%20rafting/Slide96.webp">
+    <meta property="og:url" content="https://ayoraftingmalang.netlify.app/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1000/1000213.png">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Boostrap & Fonts with Preload -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </noscript>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <link rel="preload" href="img rafting/Slide96.webp" as="image">
+
+    <style>
+        :root {
+            --primary-orange: #ff6b00;
+            --primary-orange-hover: #e66000;
+            --text-dark: #212529;
+            --text-gray: #6c757d;
+            --bg-light: #f9fbfb;
+            --border-color: #eaeaea;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            scroll-behavior: smooth;
+        }
+
+        /* Generic Utilities from Blog */
+        .text-orange {
+            color: var(--primary-orange) !important;
+        }
+
+        .bg-orange {
+            background-color: var(--primary-orange) !important;
+            color: white;
+        }
+
+        .btn-orange {
+            background-color: var(--primary-orange);
+            color: white;
+            border: none;
+            transition: all 0.3s;
+        }
+
+        .btn-orange:hover {
+            background-color: var(--primary-orange-hover);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 999;
+        }
+
+        .btn-float {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .btn-backtop {
+            background-color: var(--primary-orange);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--text-dark) !important;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand i {
+            color: #0d6efd;
+            margin-right: 8px;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-gray) !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            padding: 8px 16px !important;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #0d6efd !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background: url('img%20rafting/Slide96.webp') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            /* Offset for navbar */
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+            z-index: 1;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .btn-custom {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            animation: zoomIn 1s ease-out 1s both;
+        }
+
+        /* Section Styling */
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-weight: 700;
+            color: #333;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #0d6efd;
+            border-radius: 2px;
+        }
+
+        /* Feature Cards */
+        .feature-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+
+        /* Image Proportions (Responsive) */
+        .img-proportional {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.5s ease;
+        }
+
+        .img-wrapper {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            /* Ensures consistent ratio on mobile and desktop */
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-wrapper:hover .img-proportional {
+            transform: scale(1.05);
+        }
+
+        /* Gallery Container specially for proportional images */
+        .gallery-item {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border-radius: 15px;
+            margin-bottom: 24px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--bg-light);
+            padding: 60px 0 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo i {
+            color: var(--primary-orange);
+            margin-right: 8px;
+        }
+
+        .footer-desc {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: #eef0f2;
+            color: var(--text-gray);
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: var(--primary-orange);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-heading {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a,
+        .footer-address {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin: 0;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-bottom-links a {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            text-decoration: none;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-section {
+                min-height: 500px;
+            }
+        }
+    </style>
+    <!-- Schema Markup untuk AI Overview -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Ayo Rafting Malang",
+      "url": "https://ayoraftingmalang.netlify.app/",
+      "description": "Petualangan arung jeram seru di Batu Malang untuk keluarga dan instansi perusahaan.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ayo Rafting Malang"
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-water"></i> Ayo Rafting
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paket">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="https://wa.me/6282211221909"
+                            class="btn btn-primary rounded-pill px-4 py-2 fw-semibold text-white">HUBUNGI KAMI</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Ayo Rafting Malang</h1>
+            <p class="hero-subtitle">Rasakan sensasi petualangan arung jeram yang memacu adrenalin di sungai terbaik
+                Malang. Aman, seru, dan tak terlupakan!</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="#paket" class="btn btn-primary btn-custom shadow-lg">Jelajahi Paket</a>
+                <a href="https://wa.me/6282211221909"
+                    class="btn btn-outline-light btn-custom shadow-lg">Konsultasikan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Highlights -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h4 class="fw-bold">Aman & Nyaman</h4>
+                        <p class="text-muted">Pemandu profesional dan bersertifikat dengan standar keamanan
+                            internasional.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-grin-beam feature-icon"></i>
+                        <h4 class="fw-bold">Pengalaman Seru</h4>
+                        <p class="text-muted">Rute terbaik yang menawarkan pemandangan indah dan jeram yang menantang
+                            menanti Anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-camera-retro feature-icon"></i>
+                        <h4 class="fw-bold">Dokumentasi Epik</h4>
+                        <p class="text-muted">Abadikan setiap momen keseruan Anda dengan tim dokumentasi profesional
+                            kami.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="img-wrapper shadow-lg mb-0">
+                        <img loading="lazy" src="img rafting/Slide97.webp" alt="Tentang Ayo Rafting"
+                            class="img-proportional">
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <h2 class="fw-bold mb-4">Mengapa Memilih Ayo Rafting Malang?</h2>
+                    <p class="text-muted mb-4" style="line-height: 1.8;">Kami adalah penyedia layanan arung jeram
+                        terpercaya di Malang, didedikasikan untuk memberikan pengalaman tak terlupakan bagi Anda,
+                        keluarga, dan teman-teman. Dengan peralatan modern dan pemandu yang berpengalaman, kami menjamin
+                        keselamatan Anda tanpa mengurangi keseruan petualangan!</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-2 fs-5 align-middle"></i>
+                            Tersedia untuk pemula hingga profesional</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-2 fs-5 align-middle"></i> Durasi
+                            pengarungan yang disesuaikan (2-3 jam)</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-2 fs-5 align-middle"></i> Sudah
+                            termasuk asuransi dan peralatan lengkap</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-primary me-2 fs-5 align-middle"></i>
+                            Fasilitas penjemputan (opsional)</li>
+                    </ul>
+                    <a href="https://wa.me/6282211221909"
+                        class="btn btn-outline-primary rounded-pill px-4 py-2 fw-semibold">Hubungi Kami <i
+                            class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Rafting -->
+    <section id="paket" class="section-padding bg-white">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pilihan Paket Petualangan</h2>
+                <p class="text-muted mt-3">Pilih paket rafting yang sesuai dengan keinginan dan kebutuhan Anda.</p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Paket 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
+                        <div class="img-wrapper m-0 rounded-0" style="aspect-ratio: 4/3;">
+                            <img loading="lazy" src="img rafting/Slide98.webp" class="img-proportional rounded-0"
+                                alt="Paket Family">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Family Rafting</h4>
+                            <p class="text-primary fw-bold fs-4 mb-3">Rp 175.000 <span
+                                    class="text-muted fs-6 fw-normal">/ pax</span></p>
+                            <p class="card-text text-muted">Cocok untuk keluarga dengan anak-anak. Rute aman, sungai
+                                tenang, dengan pemandangan alam yang asri.</p>
+                            <hr class="text-muted">
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Jarak tempuh 7 km</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Snack & Air Mineral</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Rescue Team</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-primary shadow-lg rounded-4 overflow-hidden position-relative"
+                        style="border-width: 2px !important;">
+                        <div class="position-absolute top-0 end-0 bg-primary text-white px-4 py-1 fw-bold"
+                            style="z-index:2; border-bottom-left-radius: 15px;">Best Seller</div>
+                        <div class="img-wrapper m-0 rounded-0" style="aspect-ratio: 4/3;">
+                            <img loading="lazy" src="img rafting/Slide99.webp" class="img-proportional rounded-0"
+                                alt="Paket Adventure">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-warning text-dark mb-2"><i class="fas fa-star text-dark"></i>
+                                Direkomendasikan</span>
+                            <h4 class="card-title fw-bold">Adventure Rafting</h4>
+                            <p class="text-primary fw-bold fs-4 mb-3">Rp 225.000 <span
+                                    class="text-muted fs-6 fw-normal">/ pax</span></p>
+                            <p class="card-text text-muted">Bagi Anda yang mencari tantangan lebih! Nikmati jeram grade
+                                2-3 yang akan memompa adrenalin Anda.</p>
+                            <hr class="text-muted">
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Jarak tempuh 12 km</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Makan Siang + Snack</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Transportasi Lokal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
+                        <div class="img-wrapper m-0 rounded-0" style="aspect-ratio: 4/3;">
+                            <img loading="lazy" src="img rafting/Slide100.webp" class="img-proportional rounded-0"
+                                alt="Paket Extreme">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title fw-bold">Extreme Plus</h4>
+                            <p class="text-primary fw-bold fs-4 mb-3">Rp 350.000 <span
+                                    class="text-muted fs-6 fw-normal">/ pax</span></p>
+                            <p class="card-text text-muted">Paket komplit untuk profesional atau adrenalin junkie.
+                                Kombinasi rafting panjang dan offroad jeep!</p>
+                            <hr class="text-muted">
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Jarak tempuh 15 km</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Dokumentasi Drone</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Fun Offroad Jeep</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeri Petualangan</h2>
+                <p class="text-muted mt-3">Momen keseruan klien kami saat mengarungi jeram sungai Malang.</p>
+            </div>
+
+            <div class="row g-3 justify-content-center">
+                <!-- Using square proportional items for gallery to keep layout neat and responsive -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="gallery-item">
+                        <img src="img%20rafting/Slide101.webp" alt="Galeri Rafting 1">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="gallery-item">
+                        <img src="img%20rafting/Slide106.webp" alt="Galeri Rafting 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="gallery-item">
+                        <img src="img%20rafting/Slide107.webp" alt="Galeri Rafting 3">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="gallery-item">
+                        <img src="img%20rafting/Slide108.webp" alt="Galeri Rafting 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Kontak -->
+    <section id="kontak" class="section-padding bg-primary text-white text-center position-relative">
+        <!-- Abstract shape for styling -->
+        <svg class="position-absolute top-0 start-0 w-100 h-100 text-white opacity-10" style="object-fit: cover;"
+            viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="currentColor" points="0,100 100,0 100,100" />
+        </svg>
+        <div class="container position-relative z-2">
+            <h2 class="fw-bold mb-4 fs-1 text-black">Siap untuk Berpetualang?</h2>
+            <p class="lead mb-5 mx-auto text-black" style="max-width: 700px;">Segera reservasi jadwal Anda dan dapatkan
+                penawaran
+                khusus untuk rombongan lebih dari 10 orang! Hubungi tim kami sekarang juga.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://wa.me/6282211221909" target="_blank"
+                    class="btn btn-light btn-lg rounded-pill fw-bold text-secondary px-5 py-3 shadow-lg hover-scale">
+                    <i class="fab fa-whatsapp me-2 fs-4 align-middle"></i> Konsultasi WhatsApp Gratis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-12 pe-lg-5">
+                    <div class="footer-logo">
+                        <i class="fas fa-water"></i> AYO RAFTING
+                    </div>
+                    <p class="footer-desc">The premier destination for adventure enthusiasts and thrill seekers in East
+                        Java. Join us for the ride of a lifetime tracking the river currents.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Equipment Rental</a></li>
+                        <li><a href="#paket">Tour Packages</a></li>
+                        <li><a href="#">Private Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-heading">SUPPORT</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/6282211221909">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Insurance Details</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="footer-heading">FIND US</h4>
+                    <p class="footer-address">
+                        Jl. Raya Rafting No. 123, Kota Batu,<br>
+                        Malang, Jawa Timur, 65314
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ayo Rafting Malang. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="#" class="btn-float btn-backtop" title="Kembali ke atas">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <a href="https://wa.me/6282211221909" target="_blank" class="btn-float btn-whatsapp"
+            title="Hubungi Kami via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+                navbar.style.padding = '10px 0';
+            } else {
+                navbar.style.boxShadow = 'none';
+                navbar.style.padding = '15px 0';
+            }
+        });
+
+        // Smooth scroll for back to top button
+        document.querySelector('.btn-backtop').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
